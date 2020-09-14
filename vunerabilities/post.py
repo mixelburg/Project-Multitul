@@ -99,6 +99,7 @@ def post_id(sock, user_id):
     post_info = get_post_info()
     post_data = separator(send_post_request(sock, owner_id, user_id, post_info[0], post_info[1],
                                             post_info[2], post_info[3], post_info[4], post_info[5]))
+    print(post_data)
     print_glit(post_data)
 
 
